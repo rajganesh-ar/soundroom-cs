@@ -1,7 +1,8 @@
 services:
   - type: web
-    name: coming-soon-app
+    name: coming-soon
     env: node
+    plan: free
     buildCommand: npm install
-    startCommand: node src/server.js
-    region: oregon
+    startCommand: node server.js
+    autoDeploy: true
